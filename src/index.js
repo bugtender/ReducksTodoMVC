@@ -5,7 +5,6 @@ import { createStore, compose } from "redux";
 import reducers from "./reducers";
 import "todomvc-app-css/index.css";
 import App from "./containers/App";
-import registerServiceWorker from "./registerServiceWorker";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 
@@ -20,4 +19,3 @@ ReactDOM.render(
   </Provider>,
   document.getElementById("root")
 );
-registerServiceWorker();
