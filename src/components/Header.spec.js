@@ -31,7 +31,7 @@ describe("components", () => {
       const [h1, input] = output.props.children;
 
       expect(h1.type).toBe("h1");
-      expect(h1.props.children).toBe("todos");
+      expect(h1.props.children).toBe("Reducks");
 
       expect(input.type).toBe(TodoTextInput);
       expect(input.props.newTodo).toBe(true);
@@ -43,7 +43,7 @@ describe("components", () => {
       const input = output.props.children[1];
       input.props.onSave("");
       expect(props.addTodo).not.toBeCalled();
-      input.props.onSave("Use Redux");
+      input.props.onSave("Interview with Helen");
       expect(props.addTodo).toBeCalled();
     });
   });

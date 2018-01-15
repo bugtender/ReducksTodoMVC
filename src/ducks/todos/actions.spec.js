@@ -3,9 +3,9 @@ import * as actions from "./actions";
 
 describe("todo actions", () => {
   it("addTodo should create ADD_TODO action", () => {
-    expect(actions.addTodo("Use Redux")).toEqual({
+    expect(actions.addTodo("Interview with Helen")).toEqual({
       type: types.ADD_TODO,
-      text: "Use Redux"
+      text: "Interview with Helen"
     });
   });
 
@@ -17,10 +17,10 @@ describe("todo actions", () => {
   });
 
   it("editTodo should create EDIT_TODO action", () => {
-    expect(actions.editTodo(1, "Use Redux everywhere")).toEqual({
+    expect(actions.editTodo(1, "Interview with Helen everywhere")).toEqual({
       type: types.EDIT_TODO,
       id: 1,
-      text: "Use Redux everywhere"
+      text: "Interview with Helen everywhere"
     });
   });
 

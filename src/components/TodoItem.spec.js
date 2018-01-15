@@ -7,7 +7,7 @@ const setup = (editing = false) => {
   const props = {
     todo: {
       id: 0,
-      text: "Use Redux",
+      text: "Interview with Helen",
       completed: false
     },
     editTodo: jest.fn(),
@@ -53,7 +53,7 @@ describe("components", () => {
       expect(input.props.checked).toBe(false);
 
       expect(label.type).toBe("label");
-      expect(label.props.children).toBe("Use Redux");
+      expect(label.props.children).toBe("Interview with Helen");
 
       expect(button.type).toBe("button");
       expect(button.props.className).toBe("destroy");
@@ -90,14 +90,14 @@ describe("components", () => {
 
       const input = output.props.children;
       expect(input.type).toBe(TodoTextInput);
-      expect(input.props.text).toBe("Use Redux");
+      expect(input.props.text).toBe("Interview with Helen");
       expect(input.props.editing).toBe(true);
     });
 
     it("TodoTextInput onSave should call editTodo", () => {
       const { output, props } = setup(true);
-      output.props.children.props.onSave("Use Redux");
-      expect(props.editTodo).toBeCalledWith(0, "Use Redux");
+      output.props.children.props.onSave("Interview with Helen");
+      expect(props.editTodo).toBeCalledWith(0, "Interview with Helen");
     });
 
     it("TodoTextInput onSave should call deleteTodo if text is empty", () => {
@@ -108,7 +108,7 @@ describe("components", () => {
 
     it("TodoTextInput onSave should exit component from edit state", () => {
       const { output, renderer } = setup(true);
-      output.props.children.props.onSave("Use Redux");
+      output.props.children.props.onSave("Interview with Helen");
       const updated = renderer.getRenderOutput();
       expect(updated.type).toBe("li");
       expect(updated.props.className).toBe("");

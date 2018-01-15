@@ -5,7 +5,7 @@ describe("todos reducer", () => {
   it("should handle initial state", () => {
     expect(todos(undefined, {})).toEqual([
       {
-        text: "Use Redux",
+        text: "Interview with Helen",
         completed: false,
         id: 0
       }
@@ -30,7 +30,7 @@ describe("todos reducer", () => {
       todos(
         [
           {
-            text: "Use Redux",
+            text: "Interview with Helen",
             completed: false,
             id: 0
           }
@@ -42,7 +42,7 @@ describe("todos reducer", () => {
       )
     ).toEqual([
       {
-        text: "Use Redux",
+        text: "Interview with Helen",
         completed: false,
         id: 0
       },
@@ -57,7 +57,7 @@ describe("todos reducer", () => {
       todos(
         [
           {
-            text: "Use Redux",
+            text: "Interview with Helen",
             completed: false,
             id: 0
           },
@@ -74,7 +74,7 @@ describe("todos reducer", () => {
       )
     ).toEqual([
       {
-        text: "Use Redux",
+        text: "Interview with Helen",
         completed: false,
         id: 0
       },
@@ -96,7 +96,7 @@ describe("todos reducer", () => {
       todos(
         [
           {
-            text: "Use Redux",
+            text: "Interview with Helen",
             completed: false,
             id: 0
           },
@@ -113,7 +113,7 @@ describe("todos reducer", () => {
       )
     ).toEqual([
       {
-        text: "Use Redux",
+        text: "Interview with Helen",
         completed: false,
         id: 0
       }
@@ -130,7 +130,7 @@ describe("todos reducer", () => {
             id: 1
           },
           {
-            text: "Use Redux",
+            text: "Interview with Helen",
             completed: false,
             id: 0
           }
@@ -148,7 +148,7 @@ describe("todos reducer", () => {
         id: 1
       },
       {
-        text: "Use Redux",
+        text: "Interview with Helen",
         completed: false,
         id: 0
       }
@@ -165,7 +165,7 @@ describe("todos reducer", () => {
             id: 1
           },
           {
-            text: "Use Redux",
+            text: "Interview with Helen",
             completed: false,
             id: 0
           }
@@ -182,7 +182,7 @@ describe("todos reducer", () => {
         id: 1
       },
       {
-        text: "Use Redux",
+        text: "Interview with Helen",
         completed: false,
         id: 0
       }
@@ -199,7 +199,7 @@ describe("todos reducer", () => {
             id: 1
           },
           {
-            text: "Use Redux",
+            text: "Interview with Helen",
             completed: false,
             id: 0
           }
@@ -215,7 +215,7 @@ describe("todos reducer", () => {
         id: 1
       },
       {
-        text: "Use Redux",
+        text: "Interview with Helen",
         completed: true,
         id: 0
       }
@@ -231,7 +231,7 @@ describe("todos reducer", () => {
             id: 1
           },
           {
-            text: "Use Redux",
+            text: "Interview with Helen",
             completed: true,
             id: 0
           }
@@ -247,7 +247,7 @@ describe("todos reducer", () => {
         id: 1
       },
       {
-        text: "Use Redux",
+        text: "Interview with Helen",
         completed: false,
         id: 0
       }
@@ -264,7 +264,7 @@ describe("todos reducer", () => {
             id: 1
           },
           {
-            text: "Use Redux",
+            text: "Interview with Helen",
             completed: false,
             id: 0
           }
@@ -275,7 +275,7 @@ describe("todos reducer", () => {
       )
     ).toEqual([
       {
-        text: "Use Redux",
+        text: "Interview with Helen",
         completed: false,
         id: 0
       }
@@ -300,7 +300,7 @@ describe("todos reducer", () => {
         {
           id: 0,
           completed: false,
-          text: "Use Redux"
+          text: "Interview with Helen"
         },
         {
           id: 1,

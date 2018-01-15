@@ -10,7 +10,7 @@ const setup = propOverrides => {
     {
       todos: [
         {
-          text: "Use Redux",
+          text: "Interview with Helen",
           completed: false,
           id: 0
         },
@@ -63,7 +63,7 @@ describe("components", () => {
         const { output } = setup({
           todos: [
             {
-              text: "Use Redux",
+              text: "Interview with Helen",
               completed: true,
               id: 0
             }

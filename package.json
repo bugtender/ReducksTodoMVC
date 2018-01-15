@@ -2,7 +2,7 @@
   "name": "reducks-todo-mvc",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bugtender.github.io/reducks-todo-mvc",
+  "homepage": "https://bugtender.github.io/ReducksTodoMVC",
   "dependencies": {
     "classnames": "^2.2.5",
     "enzyme": "^3.3.0",
